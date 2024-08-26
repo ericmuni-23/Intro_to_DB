@@ -15,7 +15,7 @@ def create_database():
         cursor = db.cursor()
 
         # Create the database
-        cursor.execute("CREATE DATABASE alx_book_store")
+        cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
 
         # Commit the changes
         db.commit()
