@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import mysql.connector
 from mysql.connector import Error
 
@@ -14,7 +15,7 @@ def create_database():
             cursor = connection.cursor()
 
             # Creating the database if it does not already exist
-            cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
+            cursor.execute("except mysql.connector.Error")
 
             print("Database 'alx_book_store' created successfully!")
 
